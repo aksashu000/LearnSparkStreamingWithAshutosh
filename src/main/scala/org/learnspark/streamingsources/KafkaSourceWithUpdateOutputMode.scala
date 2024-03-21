@@ -42,7 +42,7 @@ object KafkaSourceWithUpdateOutputMode {
       wordCountDf
         .withColumn("timestamp", to_timestamp($"timestamp"))
         .withWatermark("timestamp", "10 minutes")
-        .groupBy(window($"timestamp", "10 minutes", "5 minutes"), $"word")
+        .groupBy(window($"timestamp", "10 minutes"), $"word")
         .count()
 
     val query: StreamingQuery =
@@ -52,6 +52,7 @@ object KafkaSourceWithUpdateOutputMode {
         .outputMode(OutputMode.Update())
         .format("console")
         .option("truncate", value = false)
+        .option("checkPointLocation", "/tmp/"+java.util.UUID.randomUUID())
         .start()
 
     query.awaitTermination()
