@@ -2,12 +2,12 @@
 {'id': 'user3', 'eventTime': '2024-01-01 00:03:38', 'clickedResource': 'item1', 'deviceType': 'Android', 'osVersion': '15.2'}
 {'id': 'user5', 'eventTime': '2024-01-01 00:26:17', 'clickedResource': 'checkout', 'deviceType': 'iPhone', 'osVersion': '10'}
 {'id': 'user1', 'eventTime': '2024-01-01 00:30:31', 'clickedResource': 'addToCart', 'deviceType': 'iPhone', 'osVersion': '17.4'}
-{'id': 'user5', 'eventTime': '2024-01-01 00:34:50', 'clickedResource': 'item1', 'deviceType': 'Android', 'osVersion': '10'}
+{'id': 'user5', 'eventTime': '2024-01-01 00:27:50', 'clickedResource': 'item1', 'deviceType': 'Android', 'osVersion': '10'}
 {'id': 'user5', 'eventTime': '2024-01-01 00:35:00', 'clickedResource': 'banner', 'deviceType': 'Android', 'osVersion': '17.4'}
 {'id': 'user3', 'eventTime': '2024-01-01 00:37:00', 'clickedResource': 'item2', 'deviceType': 'iPhone', 'osVersion': '17.4'}
-{'id': 'user4', 'eventTime': '2024-01-01 00:44:46', 'clickedResource': 'item2', 'deviceType': 'iPhone', 'osVersion': '15.2'}
+{'id': 'user4', 'eventTime': '2024-01-01 00:43:46', 'clickedResource': 'item2', 'deviceType': 'iPhone', 'osVersion': '15.2'}
 {'id': 'user3', 'eventTime': '2024-01-01 00:47:55', 'clickedResource': 'item1', 'deviceType': 'Android', 'osVersion': '15.2'}
-{'id': 'user4', 'eventTime': '2024-01-01 00:49:30', 'clickedResource': 'checkout', 'deviceType': 'iPhone', 'osVersion': '10'}
+{'id': 'user4', 'eventTime': '2024-01-01 00:44:30', 'clickedResource': 'checkout', 'deviceType': 'iPhone', 'osVersion': '10'}
 {'id': 'user3', 'eventTime': '2024-01-01 00:50:20', 'clickedResource': 'item1', 'deviceType': 'Android', 'osVersion': '10'}
 {'id': 'user1', 'eventTime': '2024-01-01 00:55:03', 'clickedResource': 'item1', 'deviceType': 'Android', 'osVersion': '10'}
 {'id': 'user2', 'eventTime': '2024-01-01 00:55:30', 'clickedResource': 'addToCart', 'deviceType': 'Android', 'osVersion': '10'}

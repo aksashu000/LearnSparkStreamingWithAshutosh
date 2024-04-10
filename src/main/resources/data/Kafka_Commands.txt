@@ -1,0 +1,18 @@
+Start Zookeeper:
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+Start Kafka Broker:
+bin/kafka-server-start.sh config/server.properties
+
+Create a topic:
+bin/kafka-topics.sh --create --topic <topic_name> --bootstrap-server localhost:9092
+
+Write to a topic:
+bin/kafka-console-producer.sh --topic <topic_name> --bootstrap-server localhost:9092
+
+Read from a topic:
+bin/kafka-console-consumer.sh --topic <topic_name> --bootstrap-server localhost:9092
+
+Delete a topic:
+bin/kafka-topics.sh --delete --topic <topic_name> --bootstrap-server localhost:9092
+

@@ -1,18 +1,15 @@
-package org.learnspark.streamingsources
+package org.learnspark.windows
 
-import org.apache.spark.sql.functions.{lit, to_timestamp, udf, window}
 import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.functions.{lit, to_timestamp, udf, window}
 import org.apache.spark.sql.streaming.{OutputMode, StreamingQuery, Trigger}
 
-case class ClickStream(id:String, eventTime:String, clickedResource:String, deviceType:String, osVersion:String)
-
-object KafkaSourceWithUpdateOutputMode {
+object SlidingWindow {
   def main(args: Array[String]): Unit = {
-
-    val spark = SparkSession.builder().appName("Kafka Source with Update Output Mode").master("local[*]").getOrCreate()
+    val spark = SparkSession.builder().appName("Kafka Source Sliding Window Example").master("local[*]").getOrCreate()
 
     val bootStrapServer = "localhost:9092"
-    val topic = "clickstream"
+    val topic = "windows_demo"
     val startingOffsets = "latest"
 
     import spark.implicits._
@@ -41,8 +38,7 @@ object KafkaSourceWithUpdateOutputMode {
     val windowedCounts =
       wordCountDf
         .withColumn("timestamp", to_timestamp($"timestamp"))
-        .withWatermark("timestamp", "10 minutes")
-        .groupBy(window($"timestamp", "10 minutes"), $"word")
+        .groupBy(window($"timestamp", "10 minutes", "5 minutes"), $"word")
         .count()
 
     val query: StreamingQuery =
@@ -57,5 +53,4 @@ object KafkaSourceWithUpdateOutputMode {
 
     query.awaitTermination()
   }
-
 }

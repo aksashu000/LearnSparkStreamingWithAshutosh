@@ -1,4 +1,4 @@
-package org.learnspark
+package org.learnspark.multiquerystreams
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.streaming.{OutputMode, Trigger}

@@ -1,0 +1,6 @@
+{"Id":"100", "Name":"Iron Man", "Age":50, "DeptName":"Marvel", "YearOfAdmission":2008}
+{"Id":"101", "Name":"Captain America", "Age":78, "DeptName":"Marvel", "YearOfAdmission":2011}
+{"Id":"102", "Name":"Hulk", "Age":110, "DeptName":"Marvel", "YearOfAdmission":2008}
+{"Id":"103", "Name":"Superman", "Age":40, "DeptName":"DC", "YearOfAdmission":2013}
+{"Id":"104", "Name":"Shazam", "Age":38, "DeptName":"DC", "YearOfAdmission":2019}
+{"Id":"105", "Name":"Batman", "Age":45, "DeptName":"DC", "YearOfAdmission":2005}
