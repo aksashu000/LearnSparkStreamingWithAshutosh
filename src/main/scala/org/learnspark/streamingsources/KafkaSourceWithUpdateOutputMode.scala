@@ -9,7 +9,12 @@ case class ClickStream(id:String, eventTime:String, clickedResource:String, devi
 object KafkaSourceWithUpdateOutputMode {
   def main(args: Array[String]): Unit = {
 
-    val spark = SparkSession.builder().appName("Kafka Source with Update Output Mode").master("local[*]").getOrCreate()
+    val spark =
+      SparkSession
+        .builder()
+        .appName("Kafka Source with Update Output Mode")
+        .master("local[*]")
+        .getOrCreate()
 
     val bootStrapServer = "localhost:9092"
     val topic = "clickstream"

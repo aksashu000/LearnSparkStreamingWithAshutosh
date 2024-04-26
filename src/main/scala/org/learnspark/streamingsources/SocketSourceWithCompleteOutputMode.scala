@@ -9,7 +9,12 @@ import org.apache.spark.sql.streaming.{OutputMode, StreamingQuery}
  */
 object SocketSourceWithCompleteOutputMode {
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().appName("Hello Spark Streaming").master("local[*]").getOrCreate()
+    val spark =
+      SparkSession
+      .builder()
+        .appName("Socket Source Complete Output Mode")
+        .master("local[*]")
+        .getOrCreate()
 
     val df: DataFrame = spark
       .readStream

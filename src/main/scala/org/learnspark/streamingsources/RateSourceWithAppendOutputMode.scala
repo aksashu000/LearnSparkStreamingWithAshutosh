@@ -6,7 +6,12 @@ import org.apache.spark.sql.streaming.{OutputMode, Trigger}
 object RateSourceWithAppendOutputMode {
   def main(args: Array[String]): Unit = {
 
-    val spark = SparkSession.builder().appName("Rate Source with Append Output Mode").master("local[*]").getOrCreate()
+    val spark =
+      SparkSession
+        .builder()
+        .appName("Rate Source with Append Output Mode")
+        .master("local[*]")
+        .getOrCreate()
 
     val df = spark
       .readStream
