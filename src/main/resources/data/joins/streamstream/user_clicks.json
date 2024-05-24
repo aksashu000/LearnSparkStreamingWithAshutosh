@@ -1,0 +1,11 @@
+{"userId": "user1", "clickAdId": "imp_001", "clickTime": "2023-11-15 10:40:22"}
+{"userId": "user2", "clickAdId": "imp_002", "clickTime": "2023-11-15 10:45:22"}
+{"userId": "user3", "clickAdId": "imp_001", "clickTime": "2023-11-15 10:55:22"}
+{"userId": "user1", "clickAdId": "imp_004", "clickTime": "2023-11-15 11:00:22"}
+{"userId": "user2", "clickAdId": "imp_003", "clickTime": "2023-11-16 11:07:22"}
+{"userId": "user3", "clickAdId": "imp_003", "clickTime": "2023-11-16 11:24:22"}
+{"userId": "user1", "clickAdId": "imp_004", "clickTime": "2023-11-16 11:48:22"}
+{"userId": "user2", "clickAdId": "imp_001", "clickTime": "2023-11-16 11:54:22"}
+{"userId": "user3", "clickAdId": "imp_001", "clickTime": "2023-11-17 12:34:22"}
+{"userId": "user4", "clickAdId": "imp_004", "clickTime": "2023-11-17 12:39:22"}
+{"userId": "user4", "clickAdId": "imp_006", "clickTime": "2023-11-17 12:45:22"}
